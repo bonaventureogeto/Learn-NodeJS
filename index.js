@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import { add } from './math.js'
+
 // const note = process.argv[2];
 // const newNote = {
 //   id: Date.now(),
@@ -7,7 +9,9 @@
 // }
 // console.log('your new note', newNote)
 
-const logger = require('./logger.js')
+// const logger = require('./logger.js');
 
-logger.log("heyy")
-logger.log2(29)
+// logger.log("heyy");
+// logger.log2(29);
+
+console.log(add(3457, 65879));
