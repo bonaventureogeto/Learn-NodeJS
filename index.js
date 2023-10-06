@@ -2,6 +2,10 @@
 
 import { add } from './math.js'
 
+export { greet } from './greet.js'
+export { fraud } from './fraud.js'
+
+
 // const note = process.argv[2];
 // const newNote = {
 //   id: Date.now(),

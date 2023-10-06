@@ -1,0 +1,5 @@
+fs: used for file system operations
+http: used for creating HTTP servers and clients
+path: used for working with file paths
+os: used for retrieving operating system-related information
+crypto: used for cryptographic operations
