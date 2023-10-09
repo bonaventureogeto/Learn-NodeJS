@@ -1,0 +1,8 @@
+In the example above, the readFile function reads the contents of file.txt. 
+When the file is read, the callback function is executed. 
+If an error occurs during the operation, the error is passed to the callback function as the first argument.
+
+Promises
+Promises provide a cleaner way of handling asynchronous code in Node.js. 
+Promises represent a value that may not be available yet and allow you to chain
+ multiple asynchronous operations together.
