@@ -12,8 +12,8 @@ yargs(hideBin(process.argv))
       });
     },
     async (argv) => {}
-)
-    
+  )
+
   .option("tags", {
     alias: "t",
     type: "string",
@@ -24,8 +24,8 @@ yargs(hideBin(process.argv))
     "get all notes",
     () => {},
     async (argv) => {}
-)
-    
+  )
+
   .command(
     "find <filter>",
     "get matching notes",
@@ -37,8 +37,8 @@ yargs(hideBin(process.argv))
       });
     },
     async (argv) => {}
-)
-    
+  )
+
   .command(
     "remove <id>",
     "remove a note by id",
@@ -49,8 +49,8 @@ yargs(hideBin(process.argv))
       });
     },
     async (argv) => {}
-)
-    
+  )
+
   .command(
     "web [port]",
     "launch website to see notes",
@@ -61,9 +61,12 @@ yargs(hideBin(process.argv))
         type: "number",
       });
     },
-    async (argv) => {}
-)
-    
+    async (argv) => {
+      const notes = await getAllNotes();
+      start(notes, argv.port);
+    }
+  )
+
   .command(
     "clean",
     "remove all notes",
