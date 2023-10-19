@@ -1,1 +1,4 @@
+# gitignore for node.js
+
+./node_modules
 node_modules
