@@ -16,6 +16,10 @@ mongoose
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
 // Define your routes here
+
+// body-parser middleware
+app.use(express.json());
+
 // importing routes
 const todosRouter = require("./routes/todos");
 
