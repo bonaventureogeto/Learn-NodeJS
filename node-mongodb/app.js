@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv://bonaogeto:admin@cluster0.9ogiu4s.mongodb.net/?retryWrites=true&w=majority",
+    os.environ.get("MONGODB_URI") || "mongodb://localhost:27017/todos",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
