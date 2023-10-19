@@ -17,7 +17,8 @@ mongoose
 
 // Define your routes here
 
-// body-parser middleware
+
+// Middleware: body-parser middleware
 app.use(express.json());
 
 // importing routes
