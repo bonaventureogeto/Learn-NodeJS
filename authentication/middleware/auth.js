@@ -25,6 +25,7 @@ exports.IsUser = async (req, res, next) => {
   }
   return res.status(401).send("Unauthorized!");
 };
+
 exports.IsAdmin = async (req, res, next) => {
   if (req.user.user_type_id === 1) {
     next();
